@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.provider.MediaStore
 import com.example.google_lens_clone.barcode.BarcodeActivity
 import com.example.google_lens_clone.facedetect.FaceDetectActivity
+import com.example.google_lens_clone.imagelabeler.ImageLabelAnalyzer
+import com.example.google_lens_clone.imagelabeler.ImageLabelingActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         btnFaceDetectActivity.setOnClickListener {
             startActivity(Intent(this,FaceDetectActivity::class.java))
+        }
+
+        btnLabelerActivity.setOnClickListener {
+            startActivity(Intent(this,ImageLabelingActivity::class.java))
         }
     }
 
