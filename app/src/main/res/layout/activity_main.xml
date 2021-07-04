@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="300dp"
+        android:layout_height="400dp"/>
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Photo (external camera)"/>
+
+    <Button
+        android:id="@+id/btnCameraAcitivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open camera activity"/>
+
+    <Button
+        android:id="@+id/btnBarcodeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open barcode activity"/>
+
+    <Button
+        android:id="@+id/btnFaceDetectActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open Face Detect activity"/>
+
+</LinearLayout>
